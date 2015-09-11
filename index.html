@@ -3,16 +3,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Teko:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <title>Simple Sage Website</title>
 </head>
 <body>
 
-    <header>
-        <div class="logo"><img src="img/sage_logo1.png" alt="SAGE"></div>
-        <nav>
+    <header class="container menu clearfix">
+        <div class="logo"><img src="img/logo.gif" alt="SAGE" class="sage"></div>
+        <nav class="header">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
@@ -25,123 +30,145 @@
     <main>
 <!--main carousal-->
         <section>
-            <nav>
+            <div class="carousal">
                 <ul>
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
-            <div>
-                <li>
-                    <h1>We build websites and apps that people love</h1>
-                    <p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-                    <a href="#">Explore More</a>
-                </li>
-                <li>
-                    <h1>We build websites and apps that people love</h1>
-                    <p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-                    <a href="#">Explore More</a>
-                </li>
-                <li>
-                    <h1>We build websites and apps that people love</h1>
-                    <p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-                    <a href="#">Explore More</a>
-                </li>
-                <li>
-                    <h1>We build websites and apps that people love</h1>
-                    <p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-                    <a href="#">Explore More</a>
-                </li>
+                    <li>
+                        <div class="hero">
+                            <h1>We build websites and<br> apps that people love</h1>
+                            <p>Full suite of internet services in the areas of website development, web-based<br> enterprise solutions, corporate identity and advertisement.</p>
+                            <a href="#">Explore More</a>
+                            <nav class="nav_bar">
+                                <ul>
+                                    <li></li>
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                   <!--  <li>
+                        <h1>We build websites and apps that people love</h1>
+                        <p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+                        <a href="#">Explore More</a>
+                    </li>a
+                    <li>
+                        <h1>We build websites and apps that people love</h1>
+                        <p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+                        <a href="#">Explore More</a>
+                    </li>
+                    <li>
+                        <h1>We build websites and apps that people love</h1>
+                        <p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+                        <a href="#">Explore More</a>
+                    </li> -->
             </div>
         </section>
 
 <!--MY PROJECTS-->
-        <section>
+        <section class="projects clearfix">
             <h2>My Projects</h2>
 
             <article class="car">
-                <figure >
-                    <img src="img/high1.jpg">
-                    <h3>Model S Catalog</h3>
-                    <p>Information materials that will help to discover all features of the serial electric car Tesla Model S</p>
+                <figure>
+                    <img src="img/tesla.jpg">
+                    <h4>Model S Catalog</h4>
+                    <div class="description">
+                        <p>Information materials that will help to discover all features of the serial electric car Tesla<br> Model S</p>
+                    </div>
                 </figure>
             </article>
 
             <article class="discovery">
-                <figure >
-                    <img src="img/discover.jpg">
+                <figure>
+                    <img src="img/discovery.jpg">
                     <h4>Discovery Channel Ipad</h4>
-                    <p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>
+                    <div class="description">
+                        <p>The space is designed to inspire, and pique curiosity and encourage visitors to express their<br> own creativity</p>
+                    </div>
                 </figure>
             </article>
 
             <article class="watch">
-                <figure >
-                    <a href="#"><img src="img/watch.jpg"></a>
+                <figure>
+                    <a href="#"><img src="img/stuhrling.jpg" class="stuhrling"></a>
                     <figcaption>
                         <h4>
                             <time datetime="2014">Year 2014</time><br>
                             Client: Personal Project
                             <ul>
-                                <li>Digital</li>
-                                <li>Mobile</li>
-                                <li>Editorial</li>
+                                <li> Digital</li>
+                                <li> Mobile</li>
+                                <li> Editorial</li>
                             </ul>
                         </h4>
                     </figcaption>
                     <h4>Stuhrling</h4>
-                    <p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>
+                    <div class="description">
+                        <p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for <br>designers, creative agencies and studios.</p>
+                    </div>
                 </figure>
             </article>
 
             <article class="web_design">
-                <figure >
-                    <img src="img/website.jpg">
+                <figure>
+                    <img src="img/penguin.jpg">
                     <h4>Infinity Spaces</h4>
-                    <p>Infinity &infin; is an abstract concept describing something without any limit and is relevant in a number of fields</p>
+                    <div class="description">
+                        <p>Infinity &infin; is an abstract concept describing something without any limit and is<br> relevant in a number of fields</p>
+                    </div>
                 </figure>
             </article>
-            <a href="#">Show More Projects</a>
+            <div class="showmore">
+                <a href="#">Show More Projects</a>
+            </div>
         </section>
 
 <!--SHOWCASE-->
-        <section>
+        <section class="show">
             <h2>Showcasing your work has never been more fun</h2>
             <p>Discover elegant solution for your online portfolio. Fast, reliable, affordable.</p>
             <a href="">Get in Touch</a>
         </section>
 
 <!--STAY CONNECTED-->
-        <aside>
-            <h2>Stay Connected</h2>
-            <p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
-            <ul>
-                <li>
-                    <a href="https://www.behance.net/" target="_blank">Behance</a>
-                    <i class="fa fa-behance"></i>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                    <i class="fa fa-facebook"></i>
-                </li>
-                <li>
-                    <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
-                    <i class="fa fa-pinterest"></i>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank">Linkdin</a>
-                    <i class="fa fa-linkedin"></i>
-                </li>
-            </ul>
-        </aside>
+        <div class="bg_color">
+            <aside class="container connected">
+                <h2>Stay Connected</h2>
+                <p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
+                <ul>
+                    <li>
+                        <a href="https://www.behance.net/" target="_blank">
+                            <i class="fa fa-behance"></i>
+                            Behance
+                        </a>
+                        <!-- <i class="fa fa-behance"></i> -->
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com" target="_blank">
+                            <i class="fa fa-pinterest"></i>
+                            Pinterest
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                            Linkdin
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
     </main>
 
 <!--Copyright-->
-    <footer>
+    <footer class="copy">
         <p>Copyright &copy; 2015 SAGE Agency Worldwide. All rights reserved.</p>
     </footer>
 

@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+/*fonts
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:  #fff;
+    background-size: cover;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 10px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2, h3, h4 {
+    font-weight: 400;
+    color: #000;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.projects h2 {
+    margin: 20px 0px;
+    letter-spacing: 2px;
+}
+
+.projects p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: center;
+    color: #555;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header a {
+    color: #cacaca;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header ul {
+    float: right;
+    margin-top: 18px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+header  .active a {
+    color: red;
+    border-bottom: 2px solid red;
+    padding-bottom: 13px;
+}
+
+.logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.sage {
+    width: 50px;
+    height: 50px;
+}
+
+.carousal {
+    background: #30282a url(../img/bkgd.jpg) center no-repeat;
+    background-size: cover;
+    height: 620px;
+/*    height: 80vh; <-- another way to do it*/
+}
+
+.carousal ul{
+    position: relative;
+    top: 33%;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.hero p {
+    margin-bottom: 28px;
+    color: #c2bab3;
+    line-height: 1.2;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 10px;
+    margin-bottom: 128px;
+}
+
+.nav_bar li{
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin:  0 auto;
+    background-color: #777;
+    margin-right: 3px;
+}
+
+.nav_bar .active {
+    background-color: #fff;
+}
+
+.car, .discovery, .watch, .web_design {
+    width: 49%;
+    color: black;
+    overflow: hidden;
+}
+
+.car, .watch {
+    width: 49%;
+    float: left;
+    margin-left: .65%;
+    margin-right: .25%;
+}
+
+.discovery, .web_design {
+    width: 49%;
+    float: right;
+    margin-left: .25%;
+    margin-right: .65%;
+}
+
+.car img, .discovery img, .watch img, .web_design img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.description {
+    width: 58%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*adding hover state*/
+
+/*Another way to do it is using opacity*/
+.watch figure {
+    position: relative;
+}
+
+figcaption {
+    display: none;
+    width: 100%;
+    height: 85%;
+    background-color: #f63c3c;
+    position: absolute;
+    top: 0%;
+    padding-top: 20%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+a:hover + figcaption{
+    display: block;
+}
+
+figcaption h4, figcaption li {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+figcaption ul {
+    padding-top: 50px;
+}
+
+figcaption li {
+    display: inline-block;
+    font-size: 10px;
+}
+
+figcaption li:after {
+    content: "/";
+}
+
+figcaption li:last-child:after {
+    content: "";
+}
+
+.showmore {
+    display: block;
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 55px;
+    letter-spacing: 1px;
+}
+
+.showmore a {
+    color: #f63c3c;
+    padding-bottom: 1px;
+    border-bottom: 3px solid #f63c3c;
+    letter-spacing: 2px;
+}
+
+.show {
+    background-color: #f63c3c;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.show h2, .show p {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.show h2 {
+    letter-spacing: 4px;
+}
+
+.show p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.show a {
+    background-color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 12px 45px;
+}
+
+.bg_color {
+    background-color: #fafafa;
+    padding-top: 40px;
+}
+
+.connected {
+/*    margin-top: 40px;*/
+    width: 60%;
+}
+
+.connected h2 {
+    text-align: left;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.connected p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 11px;
+}
+
+.connected li {
+    display: inline-block;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #30282a;
+    padding: 35px 50px;
+    width: 20%;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+}
+
+.connected a {
+    color: white;
+}
+
+.connected li .fa {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.copy {
+    width: 60%;
+    color: #555;
+    margin: 0 auto;
+}
+
+.copy p {
+    font-size: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
