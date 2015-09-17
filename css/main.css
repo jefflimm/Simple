@@ -2,13 +2,6 @@
     box-sizing: border-box;
 }
 
-/*fonts
-font-family: 'Roboto', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-font-family: 'Teko', sans-serif;
-*/
-
-
 body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 14px;
@@ -78,6 +71,8 @@ a {
     text-decoration: none;
 }
 
+/*Navigation in header area*/
+
 .header a {
     color: #cacaca;
     font-family: 'Titillium Web', sans-serif;
@@ -112,11 +107,12 @@ header  .active a {
     height: 50px;
 }
 
+/*carousal*/
+
 .carousal {
     background: #30282a url(../img/bkgd.jpg) center no-repeat;
     background-size: cover;
     height: 620px;
-/*    height: 80vh; <-- another way to do it*/
 }
 
 .carousal ul{
@@ -159,60 +155,66 @@ header  .active a {
     background-color: #fff;
 }
 
+/*The articles*/
 .car, .discovery, .watch, .web_design {
-    width: 49%;
-    color: black;
-    overflow: hidden;
+    float: left;
+    width: 48%;
+    margin-right: 1.33%;
 }
 
 .car, .watch {
-    width: 49%;
-    float: left;
-    margin-left: .65%;
-    margin-right: .25%;
+    margin-left: 1.33%;
 }
 
 .discovery, .web_design {
-    width: 49%;
-    float: right;
-    margin-left: .25%;
-    margin-right: .65%;
+    margin-left: 0%;
 }
 
-.car img, .discovery img, .watch img, .web_design img{
+.projects img {
     width: 100%;
-    margin-bottom: 15px;
+    height: auto;
 }
 
-.description {
-    width: 58%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+.projects figure {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.car h4, .discovery h4, .watch h4, .web_design h4 {
+    margin-top: 20px;
+}
+
+.projects .description {
+    margin-bottom: 30px;
 }
 
 /*adding hover state*/
 
-/*Another way to do it is using opacity*/
-.watch figure {
-    position: relative;
-}
-
 figcaption {
-    display: none;
-    width: 100%;
-    height: 85%;
-    background-color: #f63c3c;
     position: absolute;
-    top: 0%;
+    top: -450px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #f63c3c;
     padding-top: 20%;
     border-width: 10px;
     border-style: solid;
     border-color: black;
 }
 
-a:hover + figcaption{
-    display: block;
+.watch figure:hover figcaption {
+    top: 0px;
 }
+
+.clearfix:after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/*Inside the hover state*/
 
 figcaption h4, figcaption li {
     color: white;
@@ -255,6 +257,7 @@ figcaption li:last-child:after {
     letter-spacing: 2px;
 }
 
+/*SHOWCASING YOUR WORK*/
 .show {
     background-color: #f63c3c;
     text-align: center;
@@ -288,26 +291,34 @@ figcaption li:last-child:after {
     padding: 12px 45px;
 }
 
+/*STAY CONNECTED*/
+
 .bg_color {
     background-color: #fafafa;
     padding-top: 40px;
 }
 
 .connected {
-/*    margin-top: 40px;*/
     width: 60%;
+
 }
 
 .connected h2 {
     text-align: left;
     letter-spacing: 3px;
     margin-bottom: 5px;
+    margin-left: 7%;
 }
 
 .connected p {
     color: #555;
     margin-bottom: 30px;
     font-size: 11px;
+    margin-left: 7%;
+}
+
+.connected ul {
+    text-align: center;
 }
 
 .connected li {
@@ -323,7 +334,6 @@ figcaption li:last-child:after {
     text-align: center;
     margin-right: 10px;
     margin-bottom: 30px;
-
 }
 
 .connected a {
@@ -336,6 +346,8 @@ figcaption li:last-child:after {
     margin-bottom: 5px;
 }
 
+
+/*Copyright*/
 .copy {
     width: 60%;
     color: #555;
@@ -348,4 +360,5 @@ figcaption li:last-child:after {
     font-weight: 300;
     padding-top: 15px;
     padding-bottom: 25px;
+    margin-left: 7%;
 }
